@@ -9,7 +9,7 @@ Ever wanted to send secret messages like an ancient Roman? Now you can! This Pyt
 - Works with lowercase letters only 🔡
 
 ## 🎥 Demo
-![Caesar Cipher Demo]()
+![Caesar Cipher Demo](https://github.com/B-Hensley/caesar-cipher/blob/main/caesar-cipher-playing.gif?raw=true)
 
 ## 📜 Installation & Usage
 ### 1️⃣ Clone the repository:

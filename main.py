@@ -1,12 +1,17 @@
 import string
 
 ALPHABET = list(string.ascii_lowercase)
+DIRECTIONS = ['encode', 'decode']
+direction = ''
 
-direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
+while direction not in DIRECTIONS:
+    direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
+    if direction in DIRECTIONS:
+        break
+
 text = input("Type your message:\n").lower()
 shift = int(input("Type the shift number:\n"))
 
-        
 def caesar(original_text, shift_amount, encode_or_decode):
     output_text = ''
         
@@ -30,15 +35,7 @@ def caesar(original_text, shift_amount, encode_or_decode):
             output_text += letter
 
     print(f"Here is the {encode_or_decode}d result: {output_text}")
-        
+    
+    
 
 caesar(original_text=text, shift_amount=shift, encode_or_decode=direction)
-
-
-
-
-
-
-
-
-
